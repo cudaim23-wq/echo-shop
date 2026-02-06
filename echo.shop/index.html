@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontpage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="">
+
+            </div>
+        </header>
+
+        <nav class="navbar">
+
+    <div class="nav-left">
+        <img src="./ảnh.jpg/logo.png" alt="Logo" class="logo">
+
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-btn">Search</button>
+
+        <a class="nav-icon">👤</a>
+        <a class="nav-icon">🛒</a>
+    </div>
+
+</nav>
+
+        <banner class="img-banner">
+            <img src="ảnh.jpg/ảnh fronpage emcommer/image-wm.png">
+        </banner>
+
+        <main class="main">
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="ảnh.jpg/ảnh fronpage emcommer/jeans.webp" alt="Denim Jeans">
+                    <h1 class="title">Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p class="desc">High quality jeans for everyday wear.</p>
+                    <button class="btn-buy">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="ảnh.jpg/ảnh fronpage emcommer/shirt.webp" alt="Shirt">
+                    <h1 class="title">Classic Shirt</h1>
+                    <p class="price">$14.99</p>
+                    <p class="desc">Soft and comfortable cotton shirt.</p>
+                    <button class="btn-buy">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="ảnh.jpg/ảnh fronpage emcommer/shoes.webp" alt="Shoes">
+                    <h1 class="title">Classic shoes</h1>
+                    <p class="price">$29.99</p>
+                    <p class="desc">Lightweight shoes for daily workouts.</p>
+                    <button class="btn-buy">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="ảnh.jpg/ảnh fronpage emcommer/home.webp" alt="Bag">
+                    <h1 class="title">Home & Living</h1>
+                    <p class="price">$39.99</p>
+                    <p class="desc">Durable and stylish leather bag.</p>
+                    <button class="btn-buy">Add to Cart</button>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    
+    <!-- Hiệu ứng bóng bóng -->
+    <div class="bubbles">
+        <div class="bubble" style="--size:3rem; --distance:8rem; --position:10%; --time:4.5s; --delay:-2s;"></div>
+        <div class="bubble" style="--size:4rem; --distance:9rem; --position:25%; --time:4s; --delay:-3s;"></div>
+        <div class="bubble" style="--size:2.5rem; --distance:6rem; --position:40%; --time:3s; --delay:-1s;"></div>
+        <div class="bubble" style="--size:3.8rem; --distance:10rem; --position:60%; --time:5s; --delay:-4s;"></div>
+        <div class="bubble" style="--size:3rem; --distance:7rem; --position:80%; --time:3.5s; --delay:-2.5s;"></div>
+    </div>
+
+    <!-- Nội dung footer -->
+    <div class="content">
+
+        <div>
+            <b>ECOOMER</b>
+            <p>Sustainable Choices for a Better Tomorrow</p>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="image" style="background-image:url('logo.webp');"></div>
+            <p>© 2024 ECOOMER. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- filter SVG cho bubble -->
+<svg style="position:absolute; width:0; height:0;">
+    <filter id="blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix"
+            values="1 0 0 0 0  
+                    0 1 0 0 0  
+                    0 0 1 0 0  
+                    0 0 0 20 -10"
+            result="blob"></feColorMatrix>
+        <feBlend in="SourceGraphic" in2="blob"></feBlend>
+    </filter>
+</svg>
+    </div>
+</body>
+
+</html>
